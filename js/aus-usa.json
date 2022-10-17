@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Australian v USA Life Expectancy",
+  "data": {
+    "url": "https://raw.githubusercontent.com/praneshdm/FIT3179-assignment-2/main/data/life-expectancy-aus-usa.csv"
+  },
+  "mark": {"type": "line", "point": true},
+  "encoding": {
+    "text": {"title": "Australian Life Expectancy"},
+    "x": {"type": "ordinal", "field": "Year"},
+    "y": {
+      "field": "Life_Expectancy ",
+      "type": "quantitative",
+      "scale": {"domain": [75, 85]},
+      "title": "Life Expectancy"
+    },
+    "color": {"field": "Country"}
+  },
+  "config": {}
+}
