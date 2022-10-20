@@ -13,7 +13,7 @@
       "name": "Developed_Country",
       "bind": {
         "input": "select",
-        "options": [null, "Developed", "Developing"],
+        "options": [null, "Developed", "Not Developed"],
         "labels": ["Show All", "Developed", "Not Developed"],
         "name": "Developed Country: "
       }
